@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Namta Live TV</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+
+<header>Namta Live TV</header>
+
+<div class="player-box">
+<video id="video" controls autoplay></video>
+</div>
+
+<select id="filter">
+<option value="All">All</option>
+<option value="Sports">Sports</option>
+<option value="News">News</option>
+<option value="Entertainment">Entertainment</option>
+</select>
+
+<div id="ads-box"></div>
+<div class="channel-list" id="channels"></div>
+
+<script src="js/channels.js"></script>
+<script src="js/player.js"></script>
+</body>
+</html>

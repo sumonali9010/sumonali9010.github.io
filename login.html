@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head><title>Admin Login</title>
+<meta name="viewport" content="width=device-width">
+<style>body{background:#020617;color:#fff;font-family:Arial}
+.box{max-width:300px;margin:100px auto}
+input,button{width:100%;padding:10px;margin:8px 0}</style></head>
+<body><div class="box">
+<h2>Admin Login</h2>
+<input type="password" id="pass" placeholder="Password">
+<button onclick="login()">Login</button>
+<p id="msg"></p></div>
+<script>
+function login(){
+ if(pass.value==="admin123"){
+  localStorage.setItem("admin","true");
+  location.href="dashboard.html";
+ }else msg.innerText="Wrong password";
+}
+</script></body></html>
