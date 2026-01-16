@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Sports HD",
+    "type": "m3u8",
+    "url": "https://example.com/sports.m3u8"
+  },
+  {
+    "name": "News",
+    "type": "m3u8",
+    "url": "https://example.com/news.m3u8"
+  },
+  {
+    "name": "YouTube Live",
+    "type": "iframe",
+    "url": "https://www.youtube.com/embed/xxxx"
+  }
+]
