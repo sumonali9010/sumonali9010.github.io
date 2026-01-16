@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Panel</title>
+<meta name="viewport" content="width=device-width">
+<style>
+body{background:#020617;color:#fff;font-family:Arial;padding:20px}
+input,select,textarea,button{width:100%;padding:10px;margin:6px 0}
+button{background:#16a34a;border:none;color:white}
+.box{background:#1e293b;padding:15px;margin-bottom:20px}
+</style>
+</head>
+<body>
+
+<h2>Admin Panel</h2>
+
+<div class="box">
+<h3>Add Channel</h3>
+<input id="name" placeholder="Channel Name">
+<input id="url" placeholder="M3U8 URL">
+<select id="cat">
+  <option>Sports</option>
+  <option>News</option>
+  <option>Entertainment</option>
+</select>
+<button onclick="addChannel()">Add Channel</button>
+</div>
+
+<div class="box">
+<h3>Ads / Custom Text</h3>
+<textarea id="adtext" placeholder="Paste Ad code or text"></textarea>
+<button onclick="saveAds()">Save</button>
+</div>
+
+<div class="box">
+<h3>Saved Channels</h3>
+<div id="list"></div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
