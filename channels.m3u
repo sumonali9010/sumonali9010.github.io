@@ -1,0 +1,10 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-id="star" tvg-name="Star Sports 1" group-title="Sports",Star Sports 1
+https://example.com/live/star.m3u8
+
+#EXTINF:-1 tvg-id="sony" tvg-name="Sony Ten 1" group-title="Sports",Sony Ten 1
+https://example.com/live/sony.m3u8
+
+#EXTINF:-1 tvg-id="willow" tvg-name="Willow Cricket" group-title="Cricket",Willow Cricket
+https://example.com/live/willow.m3u8
