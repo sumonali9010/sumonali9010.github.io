@@ -1,8 +1,0 @@
-body{margin:0;background:#0f172a;color:#fff;font-family:Arial}
-header{text-align:center;padding:12px;background:#020617}
-.player-box{background:black}
-video{width:100%}
-.channel-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;padding:10px}
-.channel{background:#020617;padding:10px;text-align:center;border-radius:6px;cursor:pointer}
-#filter{margin:10px;width:95%;padding:8px}
-#ads-box{text-align:center;margin:10px}
