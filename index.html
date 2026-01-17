@@ -38,7 +38,33 @@
         }
     </style>
 </head>
-    <script>(function(s){s.dataset.zone='10479455',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+    <!-- Monetag Popunder: 1 time per 24h (Desktop only) -->
+<script>
+(function () {
+  // ❌ Mobile এ pop বন্ধ
+  if (window.innerWidth <= 768) return;
+
+  var key = "namta_popunder_24h";
+
+  if (!localStorage.getItem(key)) {
+
+    (function(s){
+      s.dataset.zone='10479455';
+      s.src='https://al5sm.com/tag.min.js';
+    })([document.documentElement, document.body]
+        .filter(Boolean)
+        .pop()
+        .appendChild(document.createElement('script')));
+
+    localStorage.setItem(key, "shown");
+
+    setTimeout(function () {
+      localStorage.removeItem(key);
+    }, 86400000); // 24 hours
+  }
+})();
+</script>
+<!-- End Monetag Popunder -->
     <script>(function(s){s.dataset.zone='10479551',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
     <body>
 
@@ -179,6 +205,7 @@
 </script>
 </body>
 </html>
+
 
 
 
