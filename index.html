@@ -317,6 +317,26 @@
 </body>
 </html>
 
+<script>
+const namespace = "namta-online";
+const ttl = 60; // seconds (active user time)
+
+async function updateOnline() {
+  await fetch(`https://api.countapi.xyz/update/${namespace}?amount=1`);
+}
+
+async function getOnline() {
+  const res = await fetch(`https://api.countapi.xyz/get/${namespace}`);
+  const data = await res.json();
+  document.getElementById("online").innerText = data.value || 1;
+}
+
+updateOnline();
+getOnline();
+setInterval(updateOnline, 30000); // every 30 sec
+setInterval(getOnline, 5000);     // refresh view
+</script>
+
 
 
 
