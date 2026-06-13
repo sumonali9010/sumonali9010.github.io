@@ -193,14 +193,15 @@
     // চ্যানেলের ডাটা ও ফিল্টারিং লজিক
     const manualChannels = [
         { name: "T-Sports HD", url: "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/Combined_Live_TV.m3u", logo: "📺", category: "SPORTS", isIframe: true },
-        { name: "Star Sports 1", url: "toffelive.com", logo: "🏏", category: "SPORTS", isIframe: true }
+        { name: "Star Sports 1", url: "toffelive.com", logo: "🏏", category: "new", isIframe: true }
     ];
 
     const m3uMain = 'https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/Combined_Live_TV.m3u';
     const m3uBangla = 'https://namta.online/playlist.m3u8';
 
-    // যে নামগুলো চ্যানেল লিস্ট থেকে বাদ যাবে (Filtering)
-    const filterList = ['t sport', 'star sports 1', 'star ports 2', 'ony ten 1', 'sny ten 2', 'ony ten 3', 'soy six', 'star sprts select 1', 'star sport select 2', 'euro ports'];
+    // যে নামগুলো চ্যানেল লাইভ দেখাবে প্রথমে দেখাবে
+   (Filtering)
+    const filterList = ['live" show'];
 
     let masterData = {};
     let player;
